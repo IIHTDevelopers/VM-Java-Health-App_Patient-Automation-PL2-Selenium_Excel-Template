@@ -13,7 +13,7 @@ public class patient_Pages extends StartupPage {
 		super(driver);
 	}
 
-	/**@Test1
+	/**@Test1.1
 	 * about this method loginTohealthAppByGivenValidCredetial() 
 	 * @param : Map<String, String>
 	 * @description : fill usernameTextbox & passwordTextbox and click on sign in button
@@ -53,7 +53,10 @@ public class patient_Pages extends StartupPage {
 	/**@Test2
 	 * about this method verifyAllPresenceOfFieldIfPatientModuleIsPresent() 
 	 * @param : null
-	 * @description : 
+	 * @description : "On the "Patient" Module's "Search Patient" page,"
+			+ "verify & clicking on the "Search (Minimum 3 Character)" textbox"
+			+ "and get the Placeholder name of "Search (Minimum 3 Character)" textbox."
+			+ "Then verify the Placeholder name is "Search (Minimum 3 Character)."
 	 * @return : Boolean
 	 * @author : YAKSHA
 	 */
@@ -75,7 +78,12 @@ public class patient_Pages extends StartupPage {
 	/**@Test4
 	 * about this method verifyButtonIsPresent() 
 	 * @param : null
-	 * @description : 
+	 * @description : "On the "Patient" Module's,"
+			+ "clicking on "Register Patient" sub module"
+			+ "and verify that the "+ New Photo" button is present or not ?"
+			+ "After validation of "+ New Photo" button,"
+			+ "then click on it."
+			+ "Then verify "Take A Snapshot" button is present or not?"
 	 * @return : Boolean
 	 * @author : YAKSHA
 	 */
@@ -110,7 +118,9 @@ public class patient_Pages extends StartupPage {
 	/**@Test7
 	 * about this method scrollToBottomAndVerifyFieldIsPresent() 
 	 * @param : null
-	 * @description : 
+	 * @description : "On the "Basic Information" form of "Register Patient" sub module,"
+			+ "scroll to the buttom of the "Basic Information" form."
+			+ "Then verify the "Blood Group" Dropdown is present or not?"
 	 * @return : String
 	 * @author : YAKSHA
 	 */
@@ -121,7 +131,10 @@ public class patient_Pages extends StartupPage {
 	/**@Test8
 	 * about this method scrollToBottomVerifyFieldAndHighlight() 
 	 * @param : null
-	 * @description : 
+	 * @description : "On the buttom of the "Basic Information" form "
+			+ "of "Register Patient" sub module,"
+			+ "If "Blood Group" Dropdown is present"
+			+ "then highlight the "Blood Group" Dropdown"
 	 * @return : Boolean
 	 * @author : YAKSHA
 	 */
@@ -132,7 +145,10 @@ public class patient_Pages extends StartupPage {
 	/**@Test9
 	 * about this method verifyOptionIsSelectedFromDropdown() 
 	 * @param : get the data from Excel file as type Map<String, String> expectedData
-	 * @description : it will select the option as per Excel expected data
+	 * @description : "On the New Visit" page's "Patient Information" form,"
+			+ "scroll to the  "Relation With Patient" dropdown"
+			+ "and then select "Son" from the "Relation With Patient" dropdown."
+			+ "validate "Son" is  properly selected or not."
 	 * @return : String
 	 * @author : YAKSHA
 	 */
@@ -145,7 +161,10 @@ public class patient_Pages extends StartupPage {
 	/**@Test10
 	 * about this method verifyRadioButton() 
 	 * @param : null
-	 * @description :
+	 * @description :"Go to "Guarantor" form of "Register Patient" sub module,"
+			+ "select the "Male" Radio button form the Gender section"
+			+ "Then verify the "Male" radio button is selected or not."
+			+ "After validation, then deselect the "Male" radio button")
 	 * @return : Boolean
 	 * @author : YAKSHA
 	 */
@@ -156,7 +175,14 @@ public class patient_Pages extends StartupPage {
 	/**@Test11
 	 * about this method verifyNotificationPopupMessageIfCheckboxIsSelected() 
 	 * @param : null
-	 * @description : verify the error message using hard assert
+	 * @description : "On the "Guarantor" form of "Register Patient" sub module,"
+			+ "select the "Self" check box "
+			+ "and verify that, the "Self" check box is selected or not."
+			+ "After selected the "Self" check box"
+			+ "a "Notification" popup message will display on the button of the page"
+			+ "and then validate that Notification Popup Message "
+			+ "(Notice-Message"
+			+ "To fill the data by self checkbox, first you have to fill your address.)"
 	 * @return : String
 	 * @author : YAKSHA
 	 */
@@ -167,7 +193,12 @@ public class patient_Pages extends StartupPage {
 	/**@Test12
 	 * about this method performJavaScriptOperation() 
 	 * @param : null
-	 * @description : 
+	 * @description : "On the "Guarantor" form of "Register Patient" sub module,
+			+ "Click on "Kin/Emergency Contact" link
+			+ "by using javascript
+			+ "and it will navigate to the "Kin/Emergency Contact" form.
+			+ "Then send the value by using javascript to the "Commnets" textbox
+			+ "of "Kin/Emergency Contact" form."
 	 * @return : String
 	 * @author : YAKSHA
 	 */
@@ -179,7 +210,9 @@ public class patient_Pages extends StartupPage {
 	/**@Test13
 	 * about this method verifyTextIsPresentUsingHardAssert() 
 	 * @param : null
-	 * @description : 
+	 * @description : "On the "Kin/Emergency Contact" form of "Register Patient" sub module,
+			+ clicking and verify the "Kin/Emergency Contact" link
+			+ text is present or not using Hard Assert?
 	 * @return : String
 	 * @author : YAKSHA
 	 */
@@ -189,21 +222,12 @@ public class patient_Pages extends StartupPage {
 		}
 
 	/**@Test14
-	 * about this method getDataFromTable() 
-	 * @param : null
-	 * @description : it will fetch the data from the table
-	 * @return : Boolean
-	 * @author : YAKSHA
-	 */
-	public String getDataFromTable() throws Exception {
-		
-		return null;
-	}
-
-	/**@Test15
 	 * about this method performKeyboardOperation() 
 	 * @param : 
-	 * @description : perform the keyboard operation
+	 * @description : "Scroll to the Vaccination Module's and Expand it.
+			+ Click on "Patient List" page and
+			+ perform the keyboard operation ("Alt + N") to open the "Vaccination Patient Register" form.
+			+ Then Validate the "Vaccination Patient Register" page Name."
 	 * @return : String
 	 * @author : YAKSHA
 	 */
@@ -211,75 +235,17 @@ public class patient_Pages extends StartupPage {
 		return null;
 	}
 
-	/**@Test16
+	/**@Test15
 	 * about this method fileUploadOperation() 
 	 * @param : String
-	 * @description : Upload a image 
+	 * @description : "On the "Patient" module's "Register Patient" Sub module,
+			+ Upload the Profile Picture in "Camera/Profile Picture" form.
 	 * @return : Boolean
 	 * @author : YAKSHA
 	 */
 	public Boolean fileUploadOperation(String pathOfTheFile) throws Exception {
 		return false;
 	}
-
-	/**@Test17
-	 * about this method takingScreenshotOfTheCurrentPage() 
-	 * @param : null
-	 * @description : Taking screenshot of the current page.
-	 * @return : Boolean
-	 * @author : YAKSHA
-	 */
-	public Boolean takingScreenshotOfTheCurrentPage() throws Exception {
-		return false;	
-		}
-
-	/**@Test18
-	 * about this method handleAlertPopup()
-	 * @param : null
-	 * @description : 
-	 * @return : boolean
-	 * @author : YAKSHA
-	 */
-	public Boolean handleAlertPopup() throws Exception {
-
-		return false;	
-		}
-	
-	/**@Test19
-	 * about this method verifyToolTipOfAnElement()
-	 * @param : null
-	 * @description :go to appointmentTab and verify the TOOLTIP value/text
-	 * @return : String
-	 * @author : YAKSHA
-	 */
-	public String verifyToolTipOfAnElement() throws Exception {
-		return null;
-	}
-	
-	/**@Test20
-	 * about this method handleAutoSuggesstion() 
-	 * @param : Map<String, String>
-	 * @description : Search for a Select Item as Accounts and select Accounts  and validate Accounts is selected.
-	 * @return : Boolean
-	 * @author : YAKSHA
-	 */
-	public Boolean handleAutoSuggesstion(Map<String, String> expectedData) throws Exception {
-		
-		return false;
-		}
-	
-	/**@Test21
-	 * about this method handleIframe()
-	 * @param : null
-	 * @description : 
-	 * @return : boolean
-	 * @author : YAKSHA
-	 */
-	public String handleIframe(Map<String, String> expectedData) throws Exception {
-		return null;
-	}	
-	
-	
 
 	
 }

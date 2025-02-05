@@ -207,45 +207,5 @@ public class patient_Pages extends StartupPage {
 		return null;
 		}
 
-	/**@Test13
-	 * about this method verifyTextIsPresentUsingHardAssert() 
-	 * @param : null
-	 * @description : "On the "Kin/Emergency Contact" form of "Register Patient" sub module,
-			+ clicking and verify the "Kin/Emergency Contact" link
-			+ text is present or not using Hard Assert?
-	 * @return : String
-	 * @author : YAKSHA
-	 */
-	public String verifyTextIsPresentUsingHardAssert(Map<String, String> expectedData) throws Exception {
-
-		return null;
-		}
-
-	/**@Test14
-	 * about this method performKeyboardOperation() 
-	 * @param : 
-	 * @description : "Scroll to the Vaccination Module's and Expand it.
-			+ Click on "Patient List" page and
-			+ perform the keyboard operation ("Alt + N") to open the "Vaccination Patient Register" form.
-			+ Then Validate the "Vaccination Patient Register" page Name."
-	 * @return : String
-	 * @author : YAKSHA
-	 */
-	public String performKeyboardOperation() throws Exception {
-		return null;
-	}
-
-	/**@Test15
-	 * about this method fileUploadOperation() 
-	 * @param : String
-	 * @description : "On the "Patient" module's "Register Patient" Sub module,
-			+ Upload the Profile Picture in "Camera/Profile Picture" form.
-	 * @return : Boolean
-	 * @author : YAKSHA
-	 */
-	public Boolean fileUploadOperation(String pathOfTheFile) throws Exception {
-		return false;
-	}
-
 	
 }

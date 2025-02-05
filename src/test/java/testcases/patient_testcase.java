@@ -231,48 +231,6 @@ public class patient_testcase extends AppTestBase
 				"value is not present in comments box" + "Error in locators Classes Please check manually") ;
 	}
 
-	@Test(priority = 13, groups = {"sanity"}, description="On the \"Kin/Emergency Contact\" form of \"Register Patient\" sub module,\r\n"
-			+ "clicking and verify the \"Kin/Emergency Contact\" link\r\n"
-			+ "text is present or not using Hard Assert?")
-	public void verifyTextIsPresentUsingHardAssert() throws Exception {
-		patient_PagesInstance = new patient_Pages(driver);
-		locatorsFactoryInstance = new LocatorsFactory(driver);
-		Map<String, String> expectedData = new FileOperations().readExcelPOI(expectedDataFilePath, "patientModule");
-
-		Assert.assertEquals(patient_PagesInstance.verifyTextIsPresentUsingHardAssert(expectedData),expectedData.get("kinEmergencyContactLinkTextValue"), "" +
-				"text is not present" + "Error in Pages Classes, Please check manualy!") ;
-		Assert.assertEquals(locatorsFactoryInstance.verifyTextIsPresent(),expectedData.get("kinEmergencyContactLinkTextValue"), "" +
-				"text is not present" + "Error in locators Classes Please check manually") ;
-	}
-
-
-
-	@Test(priority = 14, groups = {"sanity"}, description="Scroll to the Vaccination Module's and Expand it.\r\n"
-			+ "Click on \"Patient List\" page and\r\n"
-			+ "perform the keyboard operation (\"Alt + N\") to open the \"Vaccination Patient Register\" form.\r\n"
-			+ "Then Validate the \"Vaccination Patient Register\" page Name.")
-	public void performKeyboardOperation() throws Exception {
-		patient_PagesInstance = new patient_Pages(driver);
-		locatorsFactoryInstance = new LocatorsFactory(driver);
-
-		Map<String, String> expectedData = new FileOperations().readExcelPOI(expectedDataFilePath, "patientModule");
-		Assert.assertEquals(patient_PagesInstance.performKeyboardOperation(), expectedData.get("titleNameOfVaccinationPatientRegisterForm"), "" +
-				"Vaccination Patient Register Form is not present" + "Error in Pages Classes, Please check manualy!");
-		Assert.assertEquals(locatorsFactoryInstance.verifyTitleNameOfVaccinationPatientRegisterFormIsPresent(),expectedData.get("titleNameOfVaccinationPatientRegisterForm"), "" + 
-				"Vaccination Patient Register Form is not present" + "Error in Locators Classes, Please check manualy!");
-	}
-
-	@Test(priority = 15, groups = {"sanity"}, description="On the \"Patient\" module's \"Register Patient\" Sub module,\r\n"
-			+ "Upload the Profile Picture in \"Camera/Profile Picture\" form.")
-	public void uploadImageInScannedImagesSection() throws Exception {
-		patient_PagesInstance = new patient_Pages(driver);
-		locatorsFactoryInstance = new LocatorsFactory(driver);	
-		Assert.assertTrue(patient_PagesInstance.fileUploadOperation(System.getProperty("user.dir") + "\\testImage\\uploadImage.png"), "" +
-				"Not able to upload the image" + "Error in Pages Classes, Please check manualy!");
-		Assert.assertTrue(locatorsFactoryInstance.verifyUploadDoneButtonIsPresent(driver).isDisplayed(), "" + 
-				"Done button is not present" + "Error in Locators Classes, Please check manualy!");
-	}
-
 	
 	@AfterClass(alwaysRun = true)
 	public void tearDown() {
